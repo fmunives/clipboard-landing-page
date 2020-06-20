@@ -1,4 +1,5 @@
 @import "colors";
+@import "header";
 
 * {
   box-sizing: border-box;
@@ -11,14 +12,25 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
-.clip-header {
-  background-image: url(../images/bg-header-mobile.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+.container {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
 }
 
 @media (min-width: 768px) {
-  .clip-header {
-    background-image: url(../images/bg-header-desktop.png);
+  .container {
+    width: 90%;
+  }
+
+  .no-container-md {
+    width: 100%;
+  }
+
+  .text-left-md {
+    text-align: left;
   }
 }

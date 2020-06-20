@@ -1,0 +1,11 @@
+.clip-header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .clip-header {
+    background-image: url(../images/bg-header-desktop.png);
+  }
+}
