@@ -13,6 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/ac6fc4de9c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Frontend Mentor | Clipboard landing page</title>
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -80,7 +84,7 @@
           Clipboard snippets in a few simple clicks.
         </p>
       </div>
-      <div>
+      <div class="px-10-md">
         <img class="w-100" src="./images/image-devices.png" alt="devices" />
       </div>
       <div>
@@ -129,7 +133,7 @@
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
       </div>
-      <div>
+      <div class="mb-7">
         <button class="button button-primary">Download for iOS</button>
         <button class="button button-secondary">Download for Mac</button>
       </div>
@@ -137,30 +141,33 @@
 
     <footer class="footer">
       <div class="container footer-grid">
-        <div><img src="./images/logo.svg" alt="logo" /></div>
-        <div>
-          <ul class="text-center text-left-md">
-            <li><a href="">FAQs</a></li>
-            <li><a href="">Contact Us </a></li>
-            <li><a href="">Privacy Policy</a></li>
-            <li><a href="">Press Kit</a></li>
-            <li><a href="">Install Guide</a></li>
-          </ul>
+        <div class="text-center">
+          <img class="logo" src="./images/logo.svg" alt="logo" />
         </div>
         <div>
-          <a href=""><img src="./images/icon-facebook.svg" alt="facebook" /></a>
-          <a href=""><img src="./images/icon-twitter.svg" alt="twitter" /></a>
-          <a href=""
-            ><img src="./images/icon-instagram.svg" alt="instagram"
-          /></a>
+          <ul class="text-center text-left-md">
+            <li class="order--2-md"><a href="">FAQs</a></li>
+            <li><a href="">Contact Us </a></li>
+            <li class="order--1-md"><a href="">Privacy Policy</a></li>
+            <li><a href="">Press Kit</a></li>
+            <li class="order--1-md"><a href="">Install Guide</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <a href=""><i class="fab fa-facebook-square"></i></a>
+          <a href=""><i class="fab fa-twitter"></i></a>
+          <a href=""><i class="fab fa-instagram"></i></a>
         </div>
       </div>
       <div class="container text-center">
         <p class="m-0 p-1">
-          Challenge by
+          <small>Challenge by</small>
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+            ><small>Frontend Mentor</small></a
+          ><small>. Coded by </small
+          ><a href="https://github.com/fmunives" target="_blank"
+            ><small>Freddy Munive</small></a
+          >.
         </p>
       </div>
     </footer>

@@ -3,6 +3,7 @@
 @import "buttons";
 @import "cards";
 @import "helpers";
+@import "footer";
 
 * {
   box-sizing: border-box;
@@ -38,10 +39,6 @@ button {
 .container {
   width: 90%;
   margin: 0 auto;
-}
-
-.text-center {
-  text-align: center;
 }
 
 .subtitle {
@@ -90,41 +87,6 @@ button {
   }
 }
 
-// footer
-
-.footer {
-  background-color: $neutral_blue_ligth;
-
-  a,
-  p {
-    color: $neutral_grey;
-    text-decoration: none;
-  }
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2em;
-  padding: 2em;
-
-  ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  li {
-    padding: 1em;
-    margin-right: 3em;
-    width: 150px;
-  }
-
-  @media (min-width: 768px) {
-    grid-template-columns: 1fr 4fr 1fr;
-  }
-}
-
 @media (min-width: 768px) {
   h1 {
     font-size: 40px;
@@ -149,10 +111,6 @@ button {
 
   .no-container-md {
     width: 100%;
-  }
-
-  .text-left-md {
-    text-align: left;
   }
 
   .keep-grid {
