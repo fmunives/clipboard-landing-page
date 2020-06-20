@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bai Jamjuree", sans-serif; }
+
+.clip-header {
+  background-image: url(../images/bg-header-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+@media (min-width: 768px) {
+  .clip-header {
+    background-image: url(../images/bg-header-desktop.png); } }
+
+/*# sourceMappingURL=main.css.map */
