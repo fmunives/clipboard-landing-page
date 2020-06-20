@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="clip-header text-center">
+    <header class="clip-header text-center mb-7">
       <div class="container">
-        <div><img src="./images/logo.svg" alt="logo" /></div>
-        <div>
+        <div class="clip-logo"><img src="./images/logo.svg" alt="logo" /></div>
+        <div class="mb-3 px-10-md">
           <h1>A history of everything you copy</h1>
           <p>
             Clipboard allows you to track and organize everything you copy.
@@ -28,36 +28,42 @@
           </p>
         </div>
         <div>
-          <button>Download for iOS</button>
-          <button>Download for Mac</button>
+          <button class="button button-primary">Download for iOS</button>
+          <button class="button button-secondary">Download for Mac</button>
         </div>
       </div>
     </header>
     <section id="keep" class="container no-container-md">
-      <div class="text-center">
-        <h2>Keep track of your snippets</h2>
-        <p>
-          Clipboard instantly stores any item you copy in the cloud, meaning you
-          can access your snippets immediately on all your devices. Our Mac and
-          iOS apps will help you organize everything.
-        </p>
+      <div class="container">
+        <div class="text-center mb-3 mb-5-md px-10-md">
+          <h2 class="subtitle">Keep track of your snippets</h2>
+          <p>
+            Clipboard instantly stores any item you copy in the cloud, meaning
+            you can access your snippets immediately on all your devices. Our
+            Mac and iOS apps will help you organize everything.
+          </p>
+        </div>
       </div>
-      <div>
-        <div><img src="./images/image-computer.png" alt="computer" /></div>
-        <div class="text-center text-left-md">
-          <div>
-            <h4>Quick Search</h4>
+      <div class="keep-grid mb-7">
+        <div class="mb-3 mb-0-md">
+          <img class="w-100" src="./images/image-computer.png" alt="computer" />
+        </div>
+        <div class="keep-cards text-center text-left-md">
+          <div class="keep-card">
+            <h4 class="m-0">Quick Search</h4>
             <p>
               Easily search your snippets by content, category, web address,
               application, and more.
             </p>
           </div>
-          <div>
-            <h4>iCloud Sync</h4>
-            <p>Instantly saves and syncs snippets across all your devices.</p>
+          <div class="keep-card">
+            <h4 class="m-0">iCloud Sync</h4>
+            <p>
+              Instantly saves and syncs snippets across all your devices.
+            </p>
           </div>
-          <div>
-            <h4>Complete History</h4>
+          <div class="keep-card">
+            <h4 class="m-0">Complete History</h4>
             <p>
               Retrieve any snippets from the first moment you started using the
               app.
@@ -67,19 +73,21 @@
       </div>
     </section>
     <section id="clipboard" class="container text-center">
-      <div>
-        <h2>Access Clipboard anywhere</h2>
+      <div class="mb-5 px-10-md">
+        <h2 class="subtitle">Access Clipboard anywhere</h2>
         <p>
           Whether you’re on the go, or at your computer, you can access all your
           Clipboard snippets in a few simple clicks.
         </p>
       </div>
-      <div><img src="./images/image-devices.png" alt="devices" /></div>
+      <div>
+        <img class="w-100" src="./images/image-devices.png" alt="devices" />
+      </div>
       <div>
         <h2>Supercharge your workflow</h2>
         <p>We’ve got the tools to boost your productivity.</p>
       </div>
-      <div>
+      <div class="clipboard-grid mt-5 mb-7">
         <div>
           <div><img src="./images/icon-blacklist.svg" alt="blacklist" /></div>
           <h4>Create blacklists</h4>
@@ -105,28 +113,30 @@
       </div>
     </section>
     <section id="brands" class="container text-center">
-      <div>
-        <img src="./images/logo-google.png" alt="google" />
-        <img src="./images/logo-ibm.png" alt="ibm" />
-        <img src="./images/logo-microsoft.png" alt="microsoft" />
-        <img src="./images/logo-hp.png" alt="hp" />
-        <img src="./images/logo-vector-graphics.png" alt="vector graphics" />
+      <div class="brand-flex mb-7">
+        <div><img src="./images/logo-google.png" alt="google" /></div>
+        <div><img src="./images/logo-ibm.png" alt="ibm" /></div>
+        <div><img src="./images/logo-microsoft.png" alt="microsoft" /></div>
+        <div><img src="./images/logo-hp.png" alt="hp" /></div>
+        <div>
+          <img src="./images/logo-vector-graphics.png" alt="vector graphics" />
+        </div>
       </div>
-      <div>
-        <h2>Clipboard for iOS and Mac OS</h2>
+      <div class="px-10-md mb-3">
+        <h2 class="subtitle">Clipboard for iOS and Mac OS</h2>
         <p>
           Available for free on the App Store. Download for Mac or iOS, sync
           with iCloud and you’re ready to start adding to your clipboard.
         </p>
       </div>
       <div>
-        <button>Download for iOS</button>
-        <button>Download for Mac</button>
+        <button class="button button-primary">Download for iOS</button>
+        <button class="button button-secondary">Download for Mac</button>
       </div>
     </section>
 
-    <footer>
-      <div class="container">
+    <footer class="footer">
+      <div class="container footer-grid">
         <div><img src="./images/logo.svg" alt="logo" /></div>
         <div>
           <ul class="text-center text-left-md">
@@ -146,7 +156,7 @@
         </div>
       </div>
       <div class="container text-center">
-        <p>
+        <p class="m-0 p-1">
           Challenge by
           <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
             >Frontend Mentor</a

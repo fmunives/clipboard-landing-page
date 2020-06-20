@@ -1,5 +1,8 @@
 @import "colors";
 @import "header";
+@import "buttons";
+@import "cards";
+@import "helpers";
 
 * {
   box-sizing: border-box;
@@ -12,8 +15,28 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
 }
 
+h1,
+h2,
+h4 {
+  color: $neutral_grey;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  color: $neutral_blue;
+}
+
+p,
+a,
+button {
+  font-size: 16px;
+}
+
 .container {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -21,7 +44,105 @@ body {
   text-align: center;
 }
 
+.subtitle {
+  width: 90%;
+  margin: 0 auto;
+}
+
+// keep section
+
+.keep-grid,
+.clipboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1em;
+}
+
+.clipboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3em;
+}
+
+// brand section
+
+.brand-flex {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+
+  & > div {
+    padding: 2em 0;
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & > div {
+      margin-right: 5em;
+    }
+
+    & div:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+// footer
+
+.footer {
+  background-color: $neutral_blue_ligth;
+
+  a,
+  p {
+    color: $neutral_grey;
+    text-decoration: none;
+  }
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  padding: 2em;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  li {
+    padding: 1em;
+    margin-right: 3em;
+    width: 150px;
+  }
+
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 4fr 1fr;
+  }
+}
+
 @media (min-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h4 {
+    font-size: 25px;
+  }
+
+  p,
+  a,
+  button {
+    font-size: 18px;
+  }
   .container {
     width: 90%;
   }
@@ -32,5 +153,14 @@ body {
 
   .text-left-md {
     text-align: left;
+  }
+
+  .keep-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .clipboard-grid {
+    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
   }
 }

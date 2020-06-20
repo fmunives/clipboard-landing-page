@@ -1,0 +1,42 @@
+.w-100 {
+  width: 100%;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
+}
+
+.mb-7 {
+  margin-bottom: 7em;
+}
+
+.mt-5 {
+  margin-top: 5em;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .mb-0-md {
+    margin-bottom: 0;
+  }
+
+  .mb-5-md {
+    margin-bottom: 5em;
+  }
+
+  .px-10-md {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}

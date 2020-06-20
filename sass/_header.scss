@@ -2,10 +2,16 @@
   background-image: url(../images/bg-header-mobile.png);
   background-repeat: no-repeat;
   background-size: cover;
-}
 
-@media (min-width: 768px) {
-  .clip-header {
+  @media (min-width: 768px) {
     background-image: url(../images/bg-header-desktop.png);
   }
+}
+
+.clip-logo {
+  padding: 7em 0 2em 0;
+}
+
+.clip-logo img {
+  width: 120px;
 }

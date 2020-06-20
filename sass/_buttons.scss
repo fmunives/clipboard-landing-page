@@ -1,0 +1,31 @@
+.button {
+  padding: 10px 60px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  transition: all 0.3s ease;
+  margin-bottom: 1em;
+
+  @media (min-width: 568px) {
+    margin-left: 1em;
+  }
+}
+
+.button-primary {
+  background-color: $primary_cyan;
+  border-bottom: 3px solid $primary_cyan_bold;
+  box-shadow: 0 2px 5px rgba($color: $primary_cyan_bold, $alpha: 0.5);
+}
+.button-secondary {
+  background-color: $secondary_blue;
+  border-bottom: 3px solid $secondary_blue_bold;
+  box-shadow: 0 2px 5px rgba($color: $secondary_blue_bold, $alpha: 0.5);
+}
+
+.button-primary:hover {
+  background-color: $primary_cyan_bold;
+}
+.button-secondary:hover {
+  background-color: $secondary_blue_bold;
+}
